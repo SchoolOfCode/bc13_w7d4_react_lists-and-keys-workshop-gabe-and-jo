@@ -9,7 +9,10 @@ import Post from '../Post';
 function Main() {
   const [posts, setPosts] = useState(samplePosts);
 
-  return <main id="main"></main>;
+    posts.map((samplePosts) => {
+      return <Post key={samplePosts.postId}/>
+    })
+  return <main id="main"></main>
 }
 
 export default Main;
